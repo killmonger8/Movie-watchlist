@@ -1,0 +1,21 @@
+[
+  {
+    "id":"132726767442390819143"
+   ,"Identification":{
+      "Name":"Add User"
+     ,"Type":"NATIVE_PLSQL"
+    }
+   ,"Source":{
+      "Location":"Local Database"
+     ,"Language":"PL\/SQL"
+     ,"PL\/SQL Code":"-- create movie user ID\n-- query movie_users table to check for existing user\n-- if yes, return PK as user_id\n-- if no, add new user to movie_users\ndeclare\n    l_user_id number;\nbegin\n    select id into l_user_id from movie_users where username = :APP_USER;\n\n    :USER_ID := l_user_id;\n\n    exception\n        when no_data_found then\n        insert into movie_users \n                (username)\n            values \n                (:APP_USER)\n            returning \n                id into :USER_ID;\nend;"
+    }
+   ,"Execution":{
+      "Sequence":1
+     ,"Point":"After Authentication"
+    }
+   ,"Subscription":{
+      "Version Number":40633098354532
+    }
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id":"132726562456426809717"
+   ,"Identification":{
+      "Name":"USER_ID"
+     ,"Scope":"Application"
+    }
+   ,"Security":{
+      "Session State Protection":"Restricted - May not be set from browser"
+     ,"Escape special characters":true
+    }
+   ,"Subscription":{
+      "Version Number":40633098354617
+    }
+  }
+]

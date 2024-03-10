@@ -1,0 +1,1700 @@
+[
+  {
+    "id":"132034820119235883237"
+   ,"Identification":{
+      "Name":"Movie Cast"
+    }
+   ,"Source":{
+      "Type":"HTTP"
+     ,"Remote Server":"api-themoviedb-org-3 (77284732484235026042)"
+     ,"URL Path Prefix":"movie\/:movie_id\/credits"
+    }
+   ,"Settings":{
+      "Pagination Type":"NO PAGINATION"
+    }
+   ,"Authentication":{
+      "Credentials":"Credentials for Movies (77559659564062140792)"
+    }
+   ,"Synchronization":{
+      "Job is Active":false
+     ,"Local Table Owner":"Parsing Schema"
+    }
+   ,"Advanced":{
+      "Static ID":"Movie_Cast"
+     ,"Pass ECID":"Y"
+    }
+   ,"REST Source Catalog":{
+      "Name":"TMDB"
+     ,"Service ":"Movie Cast"
+     ,"Version":"20220802"
+    }
+   ,"Parameters":[
+      {
+        "id":"132034820699066883239"
+       ,"Identification":{
+          "Name":"movie_id"
+        }
+       ,"Parameter":{
+          "Type":"URL Pattern"
+         ,"Data Type":"String"
+        }
+       ,"Value":{
+          "Direction":"In"
+         ,"Static":false
+         ,"Value":"505"
+         ,"Required":false
+        }
+       ,"Advanced":{
+          "Use for Row Search":false
+        }
+      }
+    ]
+   ,"Data Profiles":{
+      "id":"132034816335519883233"
+     ,"Identification":{
+        "Name":"Movie Cast"
+      }
+     ,"Data Profile":{
+        "Format":"JSON"
+       ,"Row Selector":"cast"
+       ,"Contains Single Row":false
+       ,"Use Raw Selectors":false
+      }
+     ,"Advanced":{
+        "Encoding":"Database Character Set"
+      }
+     ,"Columns":[
+        {
+          "id":"132034816516925883234"
+         ,"Identification":{
+            "Column Name":"NAME"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"name"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":2
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034816794465883234"
+         ,"Identification":{
+            "Column Name":"ADULT"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"adult"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":3
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034817071860883234"
+         ,"Identification":{
+            "Column Name":"ORDER_"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"NUMBER"
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"order"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":4
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034817446384883235"
+         ,"Identification":{
+            "Column Name":"GENDER"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"NUMBER"
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"gender"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":5
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034817743397883235"
+         ,"Identification":{
+            "Column Name":"CAST_ID"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"NUMBER"
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"cast_id"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":6
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034818033496883235"
+         ,"Identification":{
+            "Column Name":"ID"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"NUMBER"
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"id"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":1
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034818267181883236"
+         ,"Identification":{
+            "Column Name":"CHARACTER"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"character"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":7
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034818643958883236"
+         ,"Identification":{
+            "Column Name":"CREDIT_ID"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"credit_id"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":8
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034818941405883237"
+         ,"Identification":{
+            "Column Name":"POPULARITY"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"NUMBER"
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"popularity"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":9
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034819194331883237"
+         ,"Identification":{
+            "Column Name":"PROFILE_PATH"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"profile_path"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":10
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034819502099883237"
+         ,"Identification":{
+            "Column Name":"ORIGINAL_NAME"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"original_name"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":11
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034819765491883237"
+         ,"Identification":{
+            "Column Name":"KNOWN_FOR_DEPARTMENT"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"known_for_department"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":12
+           ,"Hidden":false
+          }
+        }
+      ]
+    }
+   ,"Operations":[
+      {
+        "id":"132034820251001883238"
+       ,"Label":{
+          "Label":"GET"
+        }
+       ,"Operation":{
+          "URL Pattern":"."
+         ,"HTTP Method":"GET"
+         ,"Database Operation":"Fetch Rows"
+        }
+       ,"Remote Cache":{
+          "Caching":"Disabled"
+        }
+       ,"Advanced":{
+          "Allow Fetching All Rows":false
+         ,"Force Raise HTTP-404 Error":false
+        }
+      }
+    ]
+  }
+ ,{
+    "id":"132034827616778883245"
+   ,"Identification":{
+      "Name":"Movie Details"
+    }
+   ,"Source":{
+      "Type":"HTTP"
+     ,"Remote Server":"api-themoviedb-org-3 (77284732484235026042)"
+     ,"URL Path Prefix":"movie\/:movie_id"
+    }
+   ,"Settings":{
+      "Pagination Type":"NO PAGINATION"
+    }
+   ,"Authentication":{
+      "Credentials":"Credentials for Movies (77559659564062140792)"
+    }
+   ,"Synchronization":{
+      "Job is Active":false
+     ,"Local Table Owner":"Parsing Schema"
+    }
+   ,"Advanced":{
+      "Static ID":"Movie_Details"
+     ,"Pass ECID":"Y"
+    }
+   ,"REST Source Catalog":{
+      "Name":"TMDB"
+     ,"Service ":"Movie Details"
+     ,"Version":"20220802"
+    }
+   ,"Parameters":[
+      {
+        "id":"132034828324075883245"
+       ,"Identification":{
+          "Name":"movie_id"
+        }
+       ,"Parameter":{
+          "Type":"URL Pattern"
+         ,"Data Type":"String"
+        }
+       ,"Value":{
+          "Direction":"In"
+         ,"Static":false
+         ,"Value":"505"
+         ,"Required":false
+        }
+       ,"Advanced":{
+          "Use for Row Search":false
+        }
+      }
+    ]
+   ,"Data Profiles":{
+      "id":"132034821118247883240"
+     ,"Identification":{
+        "Name":"Movie Details"
+      }
+     ,"Data Profile":{
+        "Format":"JSON"
+       ,"Contains Single Row":false
+       ,"Use Raw Selectors":false
+      }
+     ,"Advanced":{
+        "Encoding":"Database Character Set"
+      }
+     ,"Columns":[
+        {
+          "id":"132034821314768883240"
+         ,"Identification":{
+            "Column Name":"BACKDROP_PATH"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"backdrop_path"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":18
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034821628260883240"
+         ,"Identification":{
+            "Column Name":"ORIGINAL_TITLE"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"original_title"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":19
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034821854852883241"
+         ,"Identification":{
+            "Column Name":"ORIGINAL_LANGUAGE"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"original_language"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":20
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034822157702883241"
+         ,"Identification":{
+            "Column Name":"BELONGS_TO_COLLECTION"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"belongs_to_collection"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":21
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034822496675883241"
+         ,"Identification":{
+            "Column Name":"VOTE_COUNT"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"NUMBER"
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"vote_count"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":14
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034822816437883241"
+         ,"Identification":{
+            "Column Name":"POSTER_PATH"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"poster_path"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":15
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034823096199883241"
+         ,"Identification":{
+            "Column Name":"RELEASE_DATE"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"DATE"
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"release_date"
+           ,"Format Mask":"YYYY\"-\"MM\"-\"DD"
+           ,"Has Time Zone":false
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":16
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034823398379883242"
+         ,"Identification":{
+            "Column Name":"VOTE_AVERAGE"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"NUMBER"
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"vote_average"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":17
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034823685190883242"
+         ,"Identification":{
+            "Column Name":"ID"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"NUMBER"
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"id"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":1
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034823987218883242"
+         ,"Identification":{
+            "Column Name":"ADULT"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"adult"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":2
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034824252503883242"
+         ,"Identification":{
+            "Column Name":"TITLE"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"title"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":3
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034824618249883242"
+         ,"Identification":{
+            "Column Name":"VIDEO"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"video"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":4
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034824850304883243"
+         ,"Identification":{
+            "Column Name":"BUDGET"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"NUMBER"
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"budget"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":5
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034825169676883243"
+         ,"Identification":{
+            "Column Name":"STATUS"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"status"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":6
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034825460363883243"
+         ,"Identification":{
+            "Column Name":"IMDB_ID"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"imdb_id"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":7
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034825803949883243"
+         ,"Identification":{
+            "Column Name":"REVENUE"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"NUMBER"
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"revenue"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":8
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034826126337883244"
+         ,"Identification":{
+            "Column Name":"RUNTIME"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"NUMBER"
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"runtime"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":9
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034826350322883244"
+         ,"Identification":{
+            "Column Name":"TAGLINE"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"tagline"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":10
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034826679633883244"
+         ,"Identification":{
+            "Column Name":"HOMEPAGE"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"homepage"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":11
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034826955736883244"
+         ,"Identification":{
+            "Column Name":"OVERVIEW"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"overview"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":12
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034827286993883244"
+         ,"Identification":{
+            "Column Name":"POPULARITY"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"NUMBER"
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"popularity"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":13
+           ,"Hidden":false
+          }
+        }
+      ]
+    }
+   ,"Operations":[
+      {
+        "id":"132034827900575883245"
+       ,"Label":{
+          "Label":"GET"
+        }
+       ,"Operation":{
+          "URL Pattern":"."
+         ,"HTTP Method":"GET"
+         ,"Database Operation":"Fetch Rows"
+        }
+       ,"Remote Cache":{
+          "Caching":"Disabled"
+        }
+       ,"Advanced":{
+          "Allow Fetching All Rows":false
+         ,"Force Raise HTTP-404 Error":false
+        }
+      }
+    ]
+  }
+ ,{
+    "id":"132034832864859883250"
+   ,"Identification":{
+      "Name":"Search Movies"
+    }
+   ,"Source":{
+      "Type":"HTTP"
+     ,"Remote Server":"api-themoviedb-org-3 (77284732484235026042)"
+     ,"URL Path Prefix":"search\/movie"
+    }
+   ,"Settings":{
+      "Pagination Type":"Page Number"
+     ,"Page Number URL Parameter":"page"
+     ,"Index of First Page":"1"
+     ,"Fixed Page Size":20
+    }
+   ,"Authentication":{
+      "Credentials":"Credentials for Movies (77559659564062140792)"
+    }
+   ,"Synchronization":{
+      "Job is Active":false
+     ,"Local Table Owner":"Parsing Schema"
+    }
+   ,"Advanced":{
+      "Static ID":"Search_Movies"
+     ,"Pass ECID":"Y"
+    }
+   ,"REST Source Catalog":{
+      "Name":"TMDB"
+     ,"Service ":"Search Movies"
+     ,"Version":"20220802"
+    }
+   ,"Parameters":[
+      {
+        "id":"132034833644887883250"
+       ,"Identification":{
+          "Name":"language"
+        }
+       ,"Parameter":{
+          "Type":"URL Query String"
+         ,"Data Type":"String"
+        }
+       ,"Value":{
+          "Direction":"In"
+         ,"Static":false
+         ,"Value":"en-US"
+         ,"Required":false
+        }
+       ,"Advanced":{
+          "Use for Row Search":false
+         ,"Omit when value is empty":false
+        }
+      }
+     ,{
+        "id":"132034833964604883250"
+       ,"Identification":{
+          "Name":"query"
+        }
+       ,"Parameter":{
+          "Type":"URL Query String"
+         ,"Data Type":"String"
+        }
+       ,"Value":{
+          "Direction":"In"
+         ,"Static":false
+         ,"Value":"harry potter"
+         ,"Required":false
+        }
+       ,"Advanced":{
+          "Use for Row Search":false
+         ,"Omit when value is empty":false
+        }
+      }
+     ,{
+        "id":"132034834356440883251"
+       ,"Identification":{
+          "Name":"include_adult"
+        }
+       ,"Parameter":{
+          "Type":"URL Query String"
+         ,"Data Type":"String"
+        }
+       ,"Value":{
+          "Direction":"In"
+         ,"Static":false
+         ,"Value":"false"
+         ,"Required":false
+        }
+       ,"Advanced":{
+          "Use for Row Search":false
+         ,"Omit when value is empty":false
+        }
+      }
+    ]
+   ,"Data Profiles":{
+      "id":"132034828736009883246"
+     ,"Identification":{
+        "Name":"Search Movies"
+      }
+     ,"Data Profile":{
+        "Format":"JSON"
+       ,"Row Selector":"results"
+       ,"Contains Single Row":false
+       ,"Use Raw Selectors":false
+      }
+     ,"Advanced":{
+        "Encoding":"Database Character Set"
+      }
+     ,"Columns":[
+        {
+          "id":"132034828881726883247"
+         ,"Identification":{
+            "Column Name":"ID"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"NUMBER"
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"id"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":1
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034829174733883247"
+         ,"Identification":{
+            "Column Name":"ADULT"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"adult"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":2
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034829511063883247"
+         ,"Identification":{
+            "Column Name":"TITLE"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"title"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":3
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034829838780883247"
+         ,"Identification":{
+            "Column Name":"VIDEO"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"video"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":4
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034830142446883248"
+         ,"Identification":{
+            "Column Name":"OVERVIEW"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"overview"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":5
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034830400258883248"
+         ,"Identification":{
+            "Column Name":"POPULARITY"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"NUMBER"
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"popularity"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":6
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034830715724883248"
+         ,"Identification":{
+            "Column Name":"VOTE_COUNT"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"NUMBER"
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"vote_count"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":7
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034830995255883248"
+         ,"Identification":{
+            "Column Name":"POSTER_PATH"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"poster_path"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":8
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034831347513883248"
+         ,"Identification":{
+            "Column Name":"RELEASE_DATE"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"DATE"
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"release_date"
+           ,"Format Mask":"YYYY\"-\"MM\"-\"DD"
+           ,"Has Time Zone":false
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":9
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034831552950883249"
+         ,"Identification":{
+            "Column Name":"VOTE_AVERAGE"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"NUMBER"
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"vote_average"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":10
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034831912048883249"
+         ,"Identification":{
+            "Column Name":"BACKDROP_PATH"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"backdrop_path"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":11
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034832313901883249"
+         ,"Identification":{
+            "Column Name":"ORIGINAL_TITLE"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"original_title"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":12
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034832584593883249"
+         ,"Identification":{
+            "Column Name":"ORIGINAL_LANGUAGE"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"original_language"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":13
+           ,"Hidden":false
+          }
+        }
+      ]
+    }
+   ,"Operations":[
+      {
+        "id":"132034833195184883250"
+       ,"Label":{
+          "Label":"GET"
+        }
+       ,"Operation":{
+          "URL Pattern":"."
+         ,"HTTP Method":"GET"
+         ,"Database Operation":"Fetch Rows"
+        }
+       ,"Remote Cache":{
+          "Caching":"Disabled"
+        }
+       ,"Advanced":{
+          "Fixed Page Size":20
+         ,"Allow Fetching All Rows":false
+         ,"Force Raise HTTP-404 Error":false
+        }
+      }
+    ]
+  }
+ ,{
+    "id":"132034838905230883255"
+   ,"Identification":{
+      "Name":"Popular Movies"
+    }
+   ,"Source":{
+      "Type":"HTTP"
+     ,"Remote Server":"api-themoviedb-org-3 (77284732484235026042)"
+     ,"URL Path Prefix":"movie\/popular"
+    }
+   ,"Settings":{
+      "Pagination Type":"NO PAGINATION"
+    }
+   ,"Authentication":{
+      "Credentials":"Credentials for Movies (77559659564062140792)"
+    }
+   ,"Synchronization":{
+      "Job is Active":false
+     ,"Local Table Owner":"Parsing Schema"
+    }
+   ,"Advanced":{
+      "Static ID":"Popular_Movies"
+     ,"Pass ECID":"Y"
+    }
+   ,"REST Source Catalog":{
+      "Name":"TMDB"
+     ,"Service ":"Popular Movies"
+     ,"Version":"20220802"
+    }
+   ,"Parameters":[
+      {
+        "id":"132034839583677883256"
+       ,"Identification":{
+          "Name":"language"
+        }
+       ,"Parameter":{
+          "Type":"URL Query String"
+         ,"Data Type":"String"
+        }
+       ,"Value":{
+          "Direction":"In"
+         ,"Static":false
+         ,"Value":"en-US"
+         ,"Required":false
+        }
+       ,"Advanced":{
+          "Use for Row Search":false
+         ,"Omit when value is empty":false
+        }
+      }
+     ,{
+        "id":"132034839966407883256"
+       ,"Identification":{
+          "Name":"page"
+        }
+       ,"Parameter":{
+          "Type":"URL Query String"
+         ,"Data Type":"String"
+        }
+       ,"Value":{
+          "Direction":"In"
+         ,"Static":false
+         ,"Value":"1"
+         ,"Required":false
+        }
+       ,"Advanced":{
+          "Use for Row Search":false
+         ,"Omit when value is empty":false
+        }
+      }
+    ]
+   ,"Data Profiles":{
+      "id":"132034834826231883252"
+     ,"Identification":{
+        "Name":"Popular Movies"
+      }
+     ,"Data Profile":{
+        "Format":"JSON"
+       ,"Row Selector":"results"
+       ,"Contains Single Row":false
+       ,"Use Raw Selectors":false
+      }
+     ,"Advanced":{
+        "Encoding":"Database Character Set"
+      }
+     ,"Columns":[
+        {
+          "id":"132034834953267883252"
+         ,"Identification":{
+            "Column Name":"ID"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"NUMBER"
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"id"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":1
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034835309815883252"
+         ,"Identification":{
+            "Column Name":"ADULT"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"adult"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":2
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034835605440883253"
+         ,"Identification":{
+            "Column Name":"TITLE"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"title"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":3
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034835874139883253"
+         ,"Identification":{
+            "Column Name":"VIDEO"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"video"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":4
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034836237618883253"
+         ,"Identification":{
+            "Column Name":"OVERVIEW"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"overview"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":5
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034836532237883253"
+         ,"Identification":{
+            "Column Name":"POPULARITY"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"NUMBER"
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"popularity"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":6
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034836847496883254"
+         ,"Identification":{
+            "Column Name":"VOTE_COUNT"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"NUMBER"
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"vote_count"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":7
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034837144587883254"
+         ,"Identification":{
+            "Column Name":"POSTER_PATH"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"poster_path"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":8
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034837359327883254"
+         ,"Identification":{
+            "Column Name":"RELEASE_DATE"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"DATE"
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"release_date"
+           ,"Format Mask":"YYYY\"-\"MM\"-\"DD"
+           ,"Has Time Zone":false
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":9
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034837668106883254"
+         ,"Identification":{
+            "Column Name":"VOTE_AVERAGE"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"NUMBER"
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"vote_average"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":10
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034838040166883254"
+         ,"Identification":{
+            "Column Name":"BACKDROP_PATH"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"backdrop_path"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":11
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034838295712883255"
+         ,"Identification":{
+            "Column Name":"ORIGINAL_TITLE"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"original_title"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":12
+           ,"Hidden":false
+          }
+        }
+       ,{
+          "id":"132034838556481883255"
+         ,"Identification":{
+            "Column Name":"ORIGINAL_LANGUAGE"
+          }
+         ,"Source":{
+            "Type":"Data"
+           ,"Data Type":"VARCHAR2"
+           ,"Maximum Length":4000
+           ,"Primary Key":false
+          }
+         ,"Parsing":{
+            "Path Expression":"original_language"
+          }
+         ,"Remote REST Data Source Server":{
+            "Filterable":true
+          }
+         ,"Advanced":{
+            "Sequence":13
+           ,"Hidden":false
+          }
+        }
+      ]
+    }
+   ,"Operations":[
+      {
+        "id":"132034839224020883255"
+       ,"Label":{
+          "Label":"GET"
+        }
+       ,"Operation":{
+          "URL Pattern":"."
+         ,"HTTP Method":"GET"
+         ,"Database Operation":"Fetch Rows"
+        }
+       ,"Remote Cache":{
+          "Caching":"Disabled"
+        }
+       ,"Advanced":{
+          "Allow Fetching All Rows":false
+         ,"Force Raise HTTP-404 Error":false
+        }
+      }
+    ]
+  }
+]

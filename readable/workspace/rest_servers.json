@@ -1,0 +1,15 @@
+[
+  {
+    "id":"77284732484235026042"
+   ,"Identification":{
+      "Name":"api-themoviedb-org-3"
+    }
+   ,"Endpoint URL":{
+      "URL":"https:\/\/api.themoviedb.org\/3\/"
+    }
+   ,"Advanced":{
+      "Static ID":"api_themoviedb_org_3"
+     ,"Prompt On Install":false
+    }
+  }
+]

@@ -1,0 +1,209 @@
+{
+  "id":"42"
+ ,"Identification":{
+    "Theme Number":42
+   ,"Name":"Universal Theme"
+   ,"Identifier":"UNIVERSAL_THEME"
+  }
+ ,"Navigation":{
+    "Type":"List"
+   ,"Navigation Bar Type":"List"
+  }
+ ,"JavaScript":{
+    "File URLs":[
+      "#APEX_FILES#libraries\/apex\/#MIN_DIRECTORY#widget.stickyWidget#MIN#.js?v=#APEX_VERSION#"
+     ,"#THEME_FILES#js\/theme42#MIN#.js?v=#APEX_VERSION#"
+    ]
+  }
+ ,"CSS":{
+    "File URLs":[
+      "#THEME_FILES#css\/Core#MIN#.css?v=#APEX_VERSION#"
+    ]
+  }
+ ,"Component Defaults":{
+    "Page":"Standard (132009526962806253810)"
+   ,"Navigation Bar List":"Navigation Bar (132009663580911253995)"
+   ,"Navigation Menu List Position":"Side"
+   ,"Navigation Menu List (Top)":"Top Navigation Menu (132009665775064254000)"
+   ,"Navigation Menu List (Side)":"Side Navigation Menu (132009663982665253996)"
+   ,"Login Page":"Login (132009518928150253799)"
+   ,"Error Page":"Login (132009518928150253799)"
+   ,"Printer Friendly Page":"Standard (132009526962806253810)"
+   ,"Breadcrumb":"132009671286589254020"
+   ,"Button":"Text (132009669554264254016)"
+   ,"Legacy Calendar":"Calendar (132009671422794254024)"
+   ,"Default Label":"Optional - Floating (132009668840653254011)"
+   ,"Optional Label":"Optional - Floating (132009668840653254011)"
+   ,"Required Label":"Required - Floating (132009668313832254009)"
+   ,"List":"Links List (132009657030726253988)"
+   ,"Region":"Standard (132009568204263253867)"
+   ,"Classic Report":"Standard (132009628025068253946)"
+  }
+ ,"Region Defaults":{
+    "Breadcrumbs":"Title Bar (132009580598136253883)"
+   ,"Charts":"Standard (132009568204263253867)"
+   ,"Forms":"Standard (132009568204263253867)"
+   ,"Lists":"Standard (132009568204263253867)"
+   ,"Reports":"Standard (132009568204263253867)"
+   ,"Wizards":"Standard (132009568204263253867)"
+   ,"Interactive Reports":"Interactive Report (132009566143819253865)"
+  }
+ ,"Dialog Defaults":{
+    "Dialog Content Region":"Blank with Attributes (132009535571658253827)"
+   ,"Dialog Button Region":"Buttons Container (132009585788863253890)"
+   ,"Dialog Page":"Modal Dialog (132009525522033253808)"
+  }
+ ,"Icons":{
+    "Library":"Font APEX"
+  }
+ ,"Files":{
+    "File Prefix":"#APEX_FILES#themes\/theme_42\/23.2\/"
+  }
+ ,"Styles":[
+    {
+      "id":"79784627567358309207"
+     ,"Identification":{
+        "Name":"Redwood Light"
+      }
+     ,"Settings":{
+        "Is Current":false
+       ,"Is Public":true
+       ,"Accessibility Tested":false
+      }
+     ,"CSS":{
+        "File URLs":[
+          "#APEX_FILES#libraries\/oracle-fonts\/oraclesans-apex#MIN#.css?v=#APEX_VERSION#"
+         ,"#THEME_FILES#css\/Redwood#MIN#.css?v=#APEX_VERSION#"
+        ]
+      }
+     ,"Theme Roller Attributes":{
+        "Read Only":true
+       ,"Input Parameter File URLs":"#THEME_FILES#less\/theme\/Redwood-Theme.less"
+       ,"Output CSS File URL":"#THEME_FILES#css\/Redwood-Theme#MIN#.css?v=#APEX_VERSION#"
+      }
+    }
+   ,{
+      "id":"79784627934625309208"
+     ,"Identification":{
+        "Name":"Vita"
+      }
+     ,"Settings":{
+        "Is Current":false
+       ,"Is Public":true
+       ,"Accessibility Tested":true
+      }
+     ,"Theme Roller Attributes":{
+        "Read Only":true
+       ,"Input Parameter File URLs":"#THEME_FILES#less\/theme\/Vita.less"
+       ,"Output CSS File URL":"#THEME_FILES#css\/Vita#MIN#.css?v=#APEX_VERSION#"
+      }
+    }
+   ,{
+      "id":"79784628319202309208"
+     ,"Identification":{
+        "Name":"Vita - Dark"
+      }
+     ,"Settings":{
+        "Is Current":false
+       ,"Is Public":true
+       ,"Accessibility Tested":false
+      }
+     ,"Theme Roller Attributes":{
+        "Read Only":true
+       ,"Input Parameter File URLs":"#THEME_FILES#less\/theme\/Vita-Dark.less"
+       ,"Output CSS File URL":"#THEME_FILES#css\/Vita-Dark#MIN#.css?v=#APEX_VERSION#"
+      }
+    }
+   ,{
+      "id":"79784628743330309208"
+     ,"Identification":{
+        "Name":"Vita - Red"
+      }
+     ,"Settings":{
+        "Is Current":false
+       ,"Is Public":true
+       ,"Accessibility Tested":false
+      }
+     ,"Theme Roller Attributes":{
+        "Read Only":true
+       ,"Input Parameter File URLs":"#THEME_FILES#less\/theme\/Vita-Red.less"
+       ,"Output CSS File URL":"#THEME_FILES#css\/Vita-Red#MIN#.css?v=#APEX_VERSION#"
+      }
+    }
+   ,{
+      "id":"79784629105708309208"
+     ,"Identification":{
+        "Name":"Vita - Slate"
+      }
+     ,"Settings":{
+        "Is Current":false
+       ,"Is Public":true
+       ,"Accessibility Tested":false
+      }
+     ,"Theme Roller Attributes":{
+        "Read Only":true
+       ,"Input Parameter File URLs":"#THEME_FILES#less\/theme\/Vita-Slate.less"
+       ,"Output CSS File URL":"#THEME_FILES#css\/Vita-Slate#MIN#.css?v=#APEX_VERSION#"
+      }
+    }
+   ,{
+      "id":"132010462378555700082"
+     ,"Identification":{
+        "Name":"Movies - Dark"
+      }
+     ,"Settings":{
+        "Is Current":true
+       ,"Is Public":true
+       ,"Accessibility Tested":false
+      }
+     ,"Theme Roller Attributes":{
+        "Read Only":false
+       ,"Input Parameter File URLs":"#THEME_FILES#less\/theme\/Vita-Dark.less"
+       ,"Output CSS File URL":"#THEME_DB_FILES#54714699197533303719.css"
+       ,"JSON Configuration":"{\"classes\":[],\"vars\":{\"@g_Accent-BG\":\"#c74634\",\"@g_Accent-OG\":\"#312d2a\"},\"customCSS\":\"\",\"useCustomLess\":\"N\"}"
+      }
+    }
+  ]
+ ,"Files":[
+    {
+      "id":"79785710105172311387"
+     ,"Identification":{
+        "File Name":"54714699197533303719.css"
+      }
+     ,"Attributes":{
+        "Mime Type":"text\/css"
+       ,"File Character Set":"Unicode UTF-8"
+      }
+    }
+   ,{
+      "id":"82037043648347241204"
+     ,"Identification":{
+        "File Name":"52225898134045393781.css"
+      }
+     ,"Attributes":{
+        "Mime Type":"text\/css"
+       ,"File Character Set":"Unicode UTF-8"
+      }
+    }
+   ,{
+      "id":"109772800932102361876"
+     ,"Identification":{
+        "File Name":"49974531166453833233.css"
+      }
+     ,"Attributes":{
+        "Mime Type":"text\/css"
+       ,"File Character Set":"Unicode UTF-8"
+      }
+    }
+   ,{
+      "id":"132010462758920700095"
+     ,"Identification":{
+        "File Name":"22242383430537501314.css"
+      }
+     ,"Attributes":{
+        "Mime Type":"text\/css"
+       ,"File Character Set":"Unicode UTF-8"
+      }
+    }
+  ]
+}
